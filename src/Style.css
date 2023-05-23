@@ -1,0 +1,114 @@
+body {
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("mehdibwcr.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: Courier New, Courier, monospace;
+    height: 100vh;
+    width: 100vw;
+}
+.main {
+    margin: 0 0 0 0;
+    width: 100vw;
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("mehdibwcr.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+
+}
+.navbar {
+     margin-top: 0;
+     border: 2px solid #c92d40;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /*background-image: url("mehdibwcr.jpg");*/
+ }
+.navbar > p {
+    border: 2px solid white;
+}
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    list-style: none;
+}
+.navbar-list > li {
+    background-color: #D2D2D5;
+    border: 2px solid greenyellow;
+    padding: 10px;
+    margin: 10px;
+}
+.navbar-list > li:hover {
+    box-shadow: -6px 7px  4px 2px #0e1718;
+    background: #c92d40;
+    color: #0e1718;
+}
+.main-intro {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #02002A;
+    width: 100vw;
+    height: 100vh;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid darkred;
+    color: #e1a95f;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.intro > h1,h2,h3 {
+    color: greenyellow;
+    border: 2px solid blue;
+    width: fit-content;
+    margin: 0 auto 5px auto;
+    padding: 5px;
+}
+.headshot {
+    width: 40%;
+    height: 60%;
+    object-fit: scale-down;
+    border: 2px solid #AF1D1D;
+    border-radius: 35px;
+    background-color: #691111;
+    /*background-image: url("mehdisquare.jpg");*/
+    background-size: cover;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.projects {
+    border: 2px solid white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.projects > div {
+    margin-top: 40px;
+    border: 2px dotted #c92d40;
+    background-color: #36413E;
+}
+.nightly {
+
+}
+.farmer-reg {
+
+}
+.hackfest {
+
+}
