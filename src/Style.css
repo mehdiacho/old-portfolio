@@ -16,7 +16,6 @@ body {
     font-family: Courier New, Courier, monospace;
     margin: -100px 0 0 0;
     width: 100vw;
-    border: 2px solid purple;
     display: flex;
     flex-direction: column;
     /*background-image: url("mehdibwcr.jpg");*/
@@ -26,21 +25,39 @@ body {
     padding-top: 100px;
 
 }
+.main > div {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+}
 .navbar {
     font-family: Courier New, Courier, monospace;
-     margin-top: 0;
-     border: 2px solid #c92d40;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     background-color: transparent;
- }
-.navbar-brand {
-    color: #ffffff;
+    margin-top: 0;
+    box-shadow: 0 0 20px 1px #adff2f ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
+}
+#name-title {
+    color: #000000;
+    text-shadow: 2px 2px 40px 3px #adff2f;
+    font-weight: bold;
+    font-size: xx-large;
+}
+#name-title:hover {
+    color: #D2D2D5;
+    text-shadow: -6px 7px  4px 2px #0e1718;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.navbar-header {
+
 }
 .nav-link {
     background-color: #D2D2D5;
-    border: 2px solid greenyellow;
     padding: 10px;
     margin: 10px;
 }
@@ -57,56 +74,103 @@ body {
 .main-intro {
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid darkblue;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #02002A;
     width: 100vw;
     height: 100vh;
+    padding-top: 100px;
 }
 .intro {
     display: flex;
     flex-direction: column;
-    border: 2px solid darkred;
     color: #e1a95f;
     margin-top: auto;
     margin-bottom: auto;
+    padding: 20px;
 }
 .intro > h1,h2,h3 {
-    color: greenyellow;
-    border: 2px solid blue;
+    color: #ADFF2F;
     width: fit-content;
-    margin: 0 auto 5px auto;
+    margin: 0 0 5px 0;
     padding: 5px;
+}
+.intro > h1 {
+    font-weight: bold;
+    font-size: xxx-large;
+}
+.intro > h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+.contact-info {
+    margin-top: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .headshot {
     width: 40%;
     height: 60%;
     object-fit: scale-down;
-    border: 2px solid #AF1D1D;
-    border-radius: 35px;
+    border-radius: 950px;
     background-color: #691111;
     /*background-image: url("mehdisquare.jpg");*/
     background-size: cover;
     margin-top: auto;
     margin-bottom: auto;
 }
+.about-me {
+    display: flex;
+    padding: 80px 30px 80px 30px;
+    justify-content: space-around;
+}
+.about-me-card {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #02002A;
+    color: #ADFF2F;
+    border-radius: 10px;
+    padding: 40px;
+}
+.col {
+    border-radius: 10px;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+    background-color: #02002A;
+    width: 30vw;
+}
+.col > i {
+    margin: auto;
+    margin-top: 20px;
+
+}
+.col > h2 {
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bolder;
+
+}
+.skills {
+}
 
 .projects {
-    border: 2px solid white;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
 }
 .projects > div {
     margin-top: 40px;
-    border: 2px dotted #c92d40;
     background-color: #36413E;
     display: flex;
     flex-direction: row;
+    padding-top: 100px;
 }
 .nightly-about {
     width: 55%;

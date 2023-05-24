@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="Style.css">
         <!-- Latest compiled and minified CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,11 +15,11 @@
         <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Mehdi Acho</a>
+                <a class="navbar-brand active" id="name-title" href="#main-intro">Mehdi Acho</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#main-intro">About Me</a>
+                    <a class="nav-link active" href="#about-me">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills">Skills</a>
@@ -38,17 +39,79 @@
         <div class="main">
             <div class="main-intro" id="main-intro">
                 <div class="intro">
-                    <h3>Hello, I am</h3>
+                    <h3>Hello, i'm</h3>
                     <h1>Mehdi Acho</h1>
+                    <p>(meh-dee)</p>
                     <h2>Web Designer and Software Developer</h2>
-                    <p>I am a Full Stack Web and Software developer<br>
-                        My passion lies in AI and all it's implementations</p>
+                    <div class="contact-info">
+                        <a href="https://www.linkedin.com/in/mehdi-acho" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl" style="color: #adff2f;"></i>
+                        </a>
+                        <a href="https://github.com/mehdiacho" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl" style="color: #adff2f;"></i>
+                        </a>
+                        <a href="mailto:mehdiacho@gmail.com" target="_blank">
+                            <i class="fa-regular fa-envelope fa-2xl" style="color: #adff2f;"></i>
+                        </a>
+                        <a href="tel:+26777162287" target="_blank">
+                            <i class="fa-solid fa-phone fa-2xl" style="color: #adff2d;"></i>
+                        </a>
+                    </div>
+
                 </div>
                 <div class="headshot">
                 </div>
             </div>
+            <div class="about-me" id="about-me">
+                <div class="about-me-card">
+                        <h2>AI Enthusiast</h2>
+                        <p>I am a Full Stack Web and Software developer<br>
+                            My passion lies in AI and all it's implementations
+                        </p>
+                </div>
+            </div>
             <div class="skills" id="skills">
                 <h2>Skills</h2>
+                <!-- Or let Bootstrap automatically handle the layout -->
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-solid fa-code fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                        <h2>Web Dev</h2>
+                    </div>
+
+                    <div class="col">
+                        <i class="fa-brands fa-android fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                        <h2>Android Development</h2>
+                    </div>
+                    <div class="col">
+                        <i class="fa-brands fa-react fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                        <h2>React JS</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                        <h2>Javascript</h2>
+                    </div>
+                    <div class="col">
+                        <i class="fa-brands fa-git fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                        <h2>git version control</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
             </div>
             <div class="projects" id="projects">
                 <h2>Recent work</h2>
