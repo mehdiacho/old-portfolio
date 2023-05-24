@@ -10,9 +10,11 @@ body {
     font-family: Courier New, Courier, monospace;
     height: 100vh;
     width: 100vw;
+    padding-top: 100px;
 }
 .main {
-    margin: 0 0 0 0;
+    font-family: Courier New, Courier, monospace;
+    margin: -100px 0 0 0;
     width: 100vw;
     border: 2px solid purple;
     display: flex;
@@ -21,32 +23,33 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: contain;
+    padding-top: 100px;
 
 }
 .navbar {
+    font-family: Courier New, Courier, monospace;
      margin-top: 0;
      border: 2px solid #c92d40;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     /*background-image: url("mehdibwcr.jpg");*/
+     background-color: transparent;
  }
-.navbar > p {
-    border: 2px solid white;
+.navbar-brand {
+    color: #ffffff;
 }
-.navbar-list {
-    display: flex;
-    flex-direction: row;
-    border: 2px solid white;
-    list-style: none;
-}
-.navbar-list > li {
+.nav-link {
     background-color: #D2D2D5;
     border: 2px solid greenyellow;
     padding: 10px;
     margin: 10px;
 }
-.navbar-list > li:hover {
+.nav-link:hover {
+    box-shadow: -6px 7px  4px 2px #0e1718;
+    background: #c92d40;
+    color: #0e1718;
+}
+.active{
     box-shadow: -6px 7px  4px 2px #0e1718;
     background: #c92d40;
     color: #0e1718;
@@ -102,12 +105,14 @@ body {
     margin-top: 40px;
     border: 2px dotted #c92d40;
     background-color: #36413E;
+    display: flex;
+    flex-direction: row;
 }
-.nightly {
-
+.nightly-about {
+    width: 55%;
 }
-.farmer-reg {
-
+.farmer-reg-about {
+    width: 45%;
 }
 .hackfest {
 
