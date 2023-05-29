@@ -154,9 +154,22 @@ body {
     margin: auto;
     margin-top: 10px;
     font-weight: bolder;
-
 }
+.col {
+    color: #ADFF2F;
+}
+
 .skills {
+}
+
+#moreBtn {
+    width: auto;
+    margin: auto;
+    background-color: #02002A;
+    color: #ADFF2F;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .projects {
