@@ -7,7 +7,6 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <!-- Latest compiled and minified CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Latest compiled JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
@@ -39,10 +38,9 @@
         <div class="main">
             <div class="main-intro" id="main-intro">
                 <div class="intro">
-                    <h3>Hello, i'm</h3>
-                    <h1>Mehdi Acho</h1>
-                    <p>(meh-dee)</p>
-                    <h2>Web Designer and Software Developer</h2>
+                    <h3>Hi, i'm</h3>
+                    <h1 id="name">Mehdi Acho</h1>
+                    <h2 id="title">Web Designer and Software Developer</h2>
                     <div class="contact-info">
                         <a href="https://www.linkedin.com/in/mehdi-acho" target="_blank">
                             <i class="fa-brands fa-linkedin fa-2xl" style="color: #adff2f;"></i>
@@ -57,16 +55,31 @@
                             <i class="fa-solid fa-phone fa-2xl" style="color: #adff2d;"></i>
                         </a>
                     </div>
-
                 </div>
                 <div class="headshot">
+                    <img src="mehdisquare.jpg">
                 </div>
             </div>
             <div class="about-me" id="about-me">
                 <div class="about-me-card">
                         <h2>AI Enthusiast</h2>
-                        <p>I am a Full Stack Web and Software developer<br>
-                            My passion lies in AI and all it's implementations
+                        <p>My name is Mehdi Ta'anji Acho, I am 21 years old and
+                            situated in Gaborone, the capital of Botswana.
+                            I am currently doing my bachelor's in computer science
+                            and software Engineering at BIUST. I love tech. I love
+                            computer science as a field to work in. I love using
+                            technology and my skills to solve problems no matter how
+                            simple or complex they are, I think it's worth a shot,
+                            and I love learning from my and others past work to be
+                            more efficient and effective in my problem-solving in the
+                            future. I love AI and dope tech in particular. I'm amazed
+                            at the things AI can do especially generative AI like
+                            DALLE or ChatGPT or Bard.  I'm currently learning the
+                            skills necessary to enter that field of computer science
+                            and see what I can accomplish in it. I also try to keep
+                            up with the current technologies and am currently working
+                            on getting a certification in Microsoft Azure
+                            Fundamental's as an entry into cloud computing.
                         </p>
                 </div>
             </div>
@@ -132,50 +145,66 @@
                         <a href="https://github.com/mehdiacho/Nightly" target="_blank">
                             <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
                         </a>
+                    </div>
+                    <!-- Carousel -->
+                    <div id="nightlyDemo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="4"></button>
                         </div>
-                        <!-- Carousel -->
-                        <div id="nightlyDemo" class="carousel slide" data-bs-ride="carousel">
 
-                            <!-- Indicators/dots -->
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="0" class="active"></button>
-                                <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="1"></button>
-                                <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="2"></button>
-                                <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="3"></button>
-                                <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="4"></button>
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Nightly_Landing.jpeg" alt="Landing Page" class="d-block w-100">
                             </div>
-
-                            <!-- The slideshow/carousel -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="Nightly_Landing.jpeg" alt="Landing Page" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="Nightly_Search.jpeg" alt="Search Page" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="NightlyAdmin_Dashboard.jpeg" alt="Admin Dashboard Page" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="NightlyAdmin_GuestHouseList.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="NightlyAdmin_AddGusetHouse.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
-                                </div>
+                            <div class="carousel-item">
+                                <img src="Nightly_Search.jpeg" alt="Search Page" class="d-block w-100">
                             </div>
-
-                            <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#nightlyDemo" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#nightlyDemo" data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
+                            <div class="carousel-item">
+                                <img src="NightlyAdmin_Dashboard.jpeg" alt="Admin Dashboard Page" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="NightlyAdmin_GuestHouseList.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="NightlyAdmin_AddGusetHouse.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
+                            </div>
                         </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#nightlyDemo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#nightlyDemo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="skillsUsed">
+                    <i class="fa-brands fa-git fa-2xl" style="color: #5fdeb3;"></i>
+                    <i class="fa-brands fa-react fa-2xl" style="color: #5fdeb3;"></i>
                 </div>
                 <div class="farmer-reg" id="farmer-reg">
+                    <div class="farmer-reg-about">
+                        <h1>Farmer Registration System</h1>
+                        <p>A Java desktop app for farmer registration and management.
+                            The app allows farmers to sign up, update their profile,
+                            and access their information. Admins can approve or decline requests,
+                            view all registered farmers, edit/delete farmer information,
+                            and generate reports with filters for district and gender.
+                        </p>
+                        <a href="https://github.com/mehdiacho/FarmersBW" target="_blank">
+                            <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
+                        </a>
+                    </div>
                     <!-- Carousel -->
-                    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+                    <div id="farmerDemo" class="carousel slide" data-bs-ride="carousel">
 
                         <!-- Indicators/dots -->
                         <div class="carousel-indicators">
@@ -205,19 +234,6 @@
                             <span class="carousel-control-next-icon"></span>
                         </button>
                     </div>
-                    <div class="farmer-reg-about">
-                        <h1>Farmer Registration System</h1>
-                        <p>A Java desktop app for farmer registration and management.
-                            The app allows farmers to sign up, update their profile,
-                            and access their information. Admins can approve or decline requests,
-                            view all registered farmers, edit/delete farmer information,
-                            and generate reports with filters for district and gender.
-                        </p>
-                        <a href="https://github.com/mehdiacho/FarmersBW" target="_blank">
-                            <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
-                        </a>
-                    </div>
-
                 </div>
                 <div class="hackfest" id="hackfest">
                     <div class="hackfest-about">
@@ -231,7 +247,7 @@
                         </a>
                     </div>
                     <!-- Carousel -->
-                    <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+                    <div id="hackfestDemo" class="carousel slide" data-bs-ride="carousel">
 
                         <!-- Indicators/dots -->
                         <div class="carousel-indicators">
