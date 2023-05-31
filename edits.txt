@@ -1,0 +1,2 @@
+Make name in intro a contrasting colour
+Make site responsive

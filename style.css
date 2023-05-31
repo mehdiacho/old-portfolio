@@ -2,10 +2,6 @@ body {
     margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
-    background-image: url("mehdibwcr.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     color: white;
     font-family: Courier New, Courier, monospace;
     height: 100vh;
@@ -26,8 +22,6 @@ body {
 
 }
 .main > div {
-    width: 100vw;
-    height: 100vh;
     padding-top: 100px;
 }
 .navbar {
@@ -83,6 +77,7 @@ body {
     padding-top: 100px;
 }
 .intro {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     color: #e1a95f;
@@ -91,16 +86,19 @@ body {
     padding: 20px;
 }
 .intro > h1,h2,h3 {
+    border: 2px solid red;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
     color: #ADFF2F;
-    width: fit-content;
-    margin: 0 0 5px 0;
     padding: 5px;
 }
-.intro > h1 {
+#name {
     font-weight: bold;
     font-size: xxx-large;
+    text-align: center;
 }
-.intro > h2 {
+#title {
     font-weight: bold;
     font-size: xx-large;
 }
@@ -112,20 +110,30 @@ body {
     justify-content: space-around;
 }
 .headshot {
-    width: 40%;
-    height: 60%;
-    object-fit: scale-down;
-    border-radius: 950px;
-    background-color: #691111;
-    /*background-image: url("mehdisquare.jpg");*/
-    background-size: cover;
     margin-top: auto;
     margin-bottom: auto;
+
+}
+.headshot > img{
+    object-fit: scale-down;
+    border-radius: 50px;
+    background-color: #691111;
+    /*background-image: url("mehdisquare.jpg");*/
+    /*background-size: cover;*/
+    height: 40vh;
 }
 .about-me {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("mehdibwcr.jpg");
+    border: 2px solid red;
     display: flex;
     padding: 80px 30px 80px 30px;
     justify-content: space-around;
+    backdrop-filter: blur(10px);
 }
 .about-me-card {
     margin-top: auto;
@@ -160,6 +168,14 @@ body {
 }
 
 .skills {
+    border: 2px solid black;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url("radial_pattern.jpeg");
 }
 
 #moreBtn {
@@ -173,24 +189,94 @@ body {
 }
 
 .projects {
-    margin-top: 100px;
+    border: 2px solid blue;
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: contain;
+    background-image: url("square_pattern.jpeg");
     display: flex;
     flex-direction: column;
     width: 100vw;
+    height: unset;
 }
-.projects > div {
+.projects > h2 {
+    color: #02002A;
+}
+.nightly, .farmer-reg, .hackfest {
+
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid red;
     margin-top: 40px;
-    background-color: #36413E;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skillsUsed {
+
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-}
-.nightly-about {
-    width: 55%;
-}
-.farmer-reg-about {
-    width: 45%;
-}
-.hackfest {
+    justify-content: center;
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
 
 }
+.skillsUsed > i {
+    padding: 20px 20px;
+    margin: 0 5px 0 5px;
+    background-color: #02002A;
+    border-radius: 5px;
+}
+.nightly-about {
+    color: #02002A;
+    padding: 10px;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+.farmer-reg-about {
+    color: #02002A;
+    padding: 10px;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+#farmerDemo {
+}
+.hackfest-about {
+    color: #02002A;
+    padding: 10px;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+#hackfestDemo {
+}
+#nightlyDemo, #hackfestDemo, #farmerDemo {
+    padding: 10px;
+    width: 95%;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+.carousel-inner, .carousel-indicators {
+    margin-top: 0;
+    border: 2px solid blue;
+}
+
+
