@@ -1,24 +1,17 @@
+
 body {
     margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     color: white;
     font-family: Courier New, Courier, monospace;
-    height: 100vh;
-    width: 100vw;
     padding-top: 100px;
 }
 .main {
     font-family: Courier New, Courier, monospace;
-    margin: -100px 0 0 0;
-    width: 100vw;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
-    /*background-image: url("mehdibwcr.jpg");*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    padding-top: 100px;
 
 }
 .main > div {
@@ -60,6 +53,9 @@ body {
     background: #c92d40;
     color: #0e1718;
 }
+#navbarBtns {
+    justify-content: flex-end;
+}
 .active{
     box-shadow: -6px 7px  4px 2px #0e1718;
     background: #c92d40;
@@ -86,7 +82,6 @@ body {
     padding: 20px;
 }
 .intro > h1,h2,h3 {
-    border: 2px solid red;
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
@@ -103,7 +98,7 @@ body {
     font-size: xx-large;
 }
 .contact-info {
-    margin-top: 150px;
+    margin-top: 10px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -112,15 +107,11 @@ body {
 .headshot {
     margin-top: auto;
     margin-bottom: auto;
-
+    max-width: 60%;
 }
-.headshot > img{
+.img-fluid{
     object-fit: scale-down;
-    border-radius: 50px;
-    background-color: #691111;
-    /*background-image: url("mehdisquare.jpg");*/
-    /*background-size: cover;*/
-    height: 40vh;
+    border-radius: 80px;
 }
 .about-me {
     width: 100vw;
@@ -129,7 +120,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-image: url("mehdibwcr.jpg");
-    border: 2px solid red;
     display: flex;
     padding: 80px 30px 80px 30px;
     justify-content: space-around;
@@ -146,12 +136,10 @@ body {
 .col {
     border-radius: 10px;
     margin: 15px 15px 15px 15px;
-    display: flex;
-    flex-direction: column;
     padding: 25px;
     text-align: center;
     background-color: #02002A;
-    width: 30vw;
+    color: #ADFF2F;
 }
 .col > i {
     margin: auto;
@@ -163,12 +151,8 @@ body {
     margin-top: 10px;
     font-weight: bolder;
 }
-.col {
-    color: #ADFF2F;
-}
 
 .skills {
-    border: 2px solid black;
     width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
@@ -189,7 +173,6 @@ body {
 }
 
 .projects {
-    border: 2px solid blue;
     background-repeat: round;
     background-attachment: fixed;
     background-size: contain;
@@ -206,7 +189,6 @@ body {
 
     width: 100vw;
     height: 100vh;
-    border: 2px solid red;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -235,7 +217,6 @@ body {
 .nightly-about {
     color: #02002A;
     padding: 10px;
-    border: 2px solid red;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -245,7 +226,6 @@ body {
 .farmer-reg-about {
     color: #02002A;
     padding: 10px;
-    border: 2px solid red;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -257,7 +237,6 @@ body {
 .hackfest-about {
     color: #02002A;
     padding: 10px;
-    border: 2px solid red;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
@@ -269,7 +248,6 @@ body {
 #nightlyDemo, #hackfestDemo, #farmerDemo {
     padding: 10px;
     width: 95%;
-    border: 2px solid red;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
@@ -277,6 +255,31 @@ body {
 .carousel-inner, .carousel-indicators {
     margin-top: 0;
     border: 2px solid blue;
+}
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid blue;
+
+}
+.row {
+    border: 2px solid red;
 }
 
 

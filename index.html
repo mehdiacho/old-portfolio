@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Mehdi Acho</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Latest compiled and minified CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Latest compiled JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-        <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand active" id="name-title" href="#main-intro">Mehdi Acho</a>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Mehdi Acho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container-fluid" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<nav class="navbar navbar-expand-sm fixed-top" id="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" id="name-title" href="#main-intro">Mehdi Acho</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBtns">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarBtns">
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item">
                     <a class="nav-link active" href="#about-me">About Me</a>
@@ -34,66 +38,85 @@
                 </li>
             </ul>
         </div>
-    </nav>
-        <div class="main">
-            <div class="main-intro" id="main-intro">
-                <div class="intro">
-                    <h3>Hi, i'm</h3>
-                    <h1 id="name">Mehdi Acho</h1>
-                    <h2 id="title">Web Designer and Software Developer</h2>
-                    <div class="contact-info">
-                        <a href="https://www.linkedin.com/in/mehdi-acho" target="_blank">
-                            <i class="fa-brands fa-linkedin fa-2xl" style="color: #adff2f;"></i>
-                        </a>
-                        <a href="https://github.com/mehdiacho" target="_blank">
-                            <i class="fa-brands fa-github fa-2xl" style="color: #adff2f;"></i>
-                        </a>
-                        <a href="mailto:mehdiacho@gmail.com" target="_blank">
-                            <i class="fa-regular fa-envelope fa-2xl" style="color: #adff2f;"></i>
-                        </a>
-                        <a href="tel:+26777162287" target="_blank">
-                            <i class="fa-solid fa-phone fa-2xl" style="color: #adff2d;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="headshot">
-                    <img src="mehdisquare.jpg">
-                </div>
-            </div>
-            <div class="about-me" id="about-me">
-                <div class="about-me-card">
-                        <h2>AI Enthusiast</h2>
-                        <p>Hello! I'm Mehdi Ta'anji Acho,
-                            a 21-year-old computer science and software engineering
-                            student at BIUST in Gaborone, Botswana. I'm passionate
-                            about technology and enjoy using my skills to solve
-                            problems, no matter how simple or complex they may be.
-                            AI fascinates me, especially generative AI like DALLE,
-                            ChatGPT, and Bard. I'm actively learning and developing
-                            the necessary skills to contribute to the field of AI.
-                            Additionally, I'm keeping up with the latest technologies
-                            and am excited to explore the endless possibilities technology offers
-                        </p>
-                </div>
-            </div>
-            <div class="skills" id="skills">
-                <h2>Skills</h2>
-                <!-- Or let Bootstrap automatically handle the layout -->
-                <div class="row">
-                    <div class="col">
-                        <i class="fa-solid fa-code fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
-                        <h2>Web Dev</h2>
-                    </div>
 
-                    <div class="col">
-                        <i class="fa-brands fa-android fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
-                        <h2>Android Development</h2>
-                    </div>
-                    <div class="col">
-                        <i class="fa-brands fa-react fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
-                        <h2>React JS</h2>
-                    </div>
-                </div>
+    </div>
+</nav>
+<div class="main container-fluid">
+    <div class="row main-intro" id="main-intro">
+        <div class="col-sm-4 order-sm-2 headshot">
+            <img src="mehdisquare.jpg" class="img-fluid" alt="headshot">
+        </div>
+        <div class="col-sm-8 order-sm-1 intro">
+            <h3>Hi, i'm</h3>
+            <h1 id="name">Mehdi Acho</h1>
+            <h2 id="title">Web Designer and Software Developer</h2>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/mehdi-acho" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #adff2f;"></i>
+                </a>
+                <a href="https://github.com/mehdiacho" target="_blank">
+                    <i class="fa-brands fa-github fa-2xl" style="color: #adff2f;"></i>
+                </a>
+                <a href="mailto:mehdiacho@gmail.com" target="_blank">
+                    <i class="fa-regular fa-envelope fa-2xl" style="color: #adff2f;"></i>
+                </a>
+                <a href="tel:+26777162287" target="_blank">
+                    <i class="fa-solid fa-phone fa-2xl" style="color: #adff2d;"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="about-me" id="about-me">
+        <div class="about-me-card">
+            <h2>AI Enthusiast</h2>
+            <p>Hello! I'm Mehdi Ta'anji Acho,
+                a 21-year-old computer science and software engineering
+                student at BIUST in Gaborone, Botswana. I'm passionate
+                about technology and enjoy using my skills to solve
+                problems, no matter how simple or complex they may be.
+                AI fascinates me, especially generative AI like DALLE,
+                ChatGPT, and Bard. I'm actively learning and developing
+                the necessary skills to contribute to the field of AI.
+                Additionally, I'm keeping up with the latest technologies
+                and am excited to explore the endless possibilities technology offers
+            </p>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+            <div class="col">
+                <i class="fa-solid fa-code fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                <h2>Web Dev</h2>
+            </div>
+
+            <div class="col">
+                <i class="fa-brands fa-android fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                <h2>Android Development</h2>
+            </div>
+            <div class="col">
+                <i class="fa-brands fa-react fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                <h2>React JS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                <h2>Javascript</h2>
+            </div>
+            <div class="col">
+                <i class="fa-brands fa-git fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                <h2>git version control</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            <button id="moreBtn" data-bs-toggle="collapse" data-bs-target="#moreSkills">More...</button>
+
+            <div id="moreSkills" class="collapse">
+                <h2>Lorem ipsum dolor text....</h2>
                 <div class="row">
                     <div class="col">
                         <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
@@ -103,177 +126,174 @@
                         <i class="fa-brands fa-git fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
                         <h2>git version control</h2>
                     </div>
-                </div>
-                <div class="row">
-
-                    <button id="moreBtn" data-bs-toggle="collapse" data-bs-target="#moreSkills">More...</button>
-
-                    <div id="moreSkills" class="collapse">
-                        <h2>Lorem ipsum dolor text....</h2>
-                        <div class="row">
-                            <div class="col">
-                                <i class="fa-brands fa-square-js fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
-                                <h2>Javascript</h2>
-                            </div>
-                            <div class="col">
-                                <i class="fa-brands fa-git fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
-                                <h2>git version control</h2>
-                            </div>
-                            <div class="col">
-                                <i class="fa-brands fa-git fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
-                                <h2>git version control</h2>
-                            </div>
-                        </div>
+                    <div class="col">
+                        <i class="fa-brands fa-git fa-beat-fade fa-2xl" style="color: #adff2f;"></i>
+                        <h2>git version control</h2>
                     </div>
                 </div>
-            </div>
-            <div class="projects" id="projects">
-                <h2>Recent work</h2>
-                <div class="nightly" id="nightly">
-                    <div class="nightly-about">
-                        <h1>Nightly</h1>
-                        <p>Nightly is a web app made with REACT with the purpose of helping people find
-                            suitable accommodation around them.
-                        </p>
-                        <a href="https://github.com/mehdiacho/Nightly" target="_blank">
-                            <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
-                        </a>
-                    </div>
-                    <!-- Carousel -->
-                    <div id="nightlyDemo" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="2"></button>
-                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="3"></button>
-                            <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="4"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Nightly_Landing.jpeg" alt="Landing Page" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Nightly_Search.jpeg" alt="Search Page" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="NightlyAdmin_Dashboard.jpeg" alt="Admin Dashboard Page" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="NightlyAdmin_GuestHouseList.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="NightlyAdmin_AddGusetHouse.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#nightlyDemo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#nightlyDemo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="skillsUsed">
-                    <i class="fa-brands fa-git fa-2xl" style="color: #5fdeb3;"></i>
-                    <i class="fa-brands fa-react fa-2xl" style="color: #5fdeb3;"></i>
-                </div>
-                <div class="farmer-reg" id="farmer-reg">
-                    <div class="farmer-reg-about">
-                        <h1>Farmer Registration System</h1>
-                        <p>A Java desktop app for farmer registration and management.
-                            The app allows farmers to sign up, update their profile,
-                            and access their information. Admins can approve or decline requests,
-                            view all registered farmers, edit/delete farmer information,
-                            and generate reports with filters for district and gender.
-                        </p>
-                        <a href="https://github.com/mehdiacho/FarmersBW" target="_blank">
-                            <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
-                        </a>
-                    </div>
-                    <!-- Carousel -->
-                    <div id="farmerDemo" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Gohan.png" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Gohan-snapped.png" alt="Chicago" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Cell.png" alt="New York" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="hackfest" id="hackfest">
-                    <div class="hackfest-about">
-                        <h1>BIUST Hackfest 2022</h1>
-                        <p>Worked in a team of 4 to develop a mobile app platform for
-                            the BIUST Resource Mobilization Committee initiative -
-                            "BIUST Open golf tournament" using Android Studio and Java.
-                        </p>
-                        <a href="https://github.com/mehdiacho/BIUST.Hackfest.2022" target="_blank">
-                            <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
-                        </a>
-                    </div>
-                    <!-- Carousel -->
-                    <div id="hackfestDemo" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="Gohan.png" alt="Los Angeles" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Gohan-snapped.png" alt="Chicago" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="Cell.png" alt="New York" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-
-                </div>
-
             </div>
         </div>
-    </body>
+    </div>
+    <div class="projects" id="projects">
+        <h2>Recent work</h2>
+        <div class="nightly" id="nightly">
+            <div class="nightly-about">
+                <h1>Nightly</h1>
+                <p>Nightly is a web app made with REACT with the purpose of helping people find
+                    suitable accommodation around them.
+                </p>
+                <a href="https://github.com/mehdiacho/Nightly" target="_blank">
+                    <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
+                </a>
+            </div>
+            <!-- Carousel -->
+            <div id="nightlyDemo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#nightlyDemo" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Nightly_Landing.jpeg" alt="Landing Page" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Nightly_Search.jpeg" alt="Search Page" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="NightlyAdmin_Dashboard.jpeg" alt="Admin Dashboard Page" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="NightlyAdmin_GuestHouseList.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="NightlyAdmin_AddGusetHouse.jpeg" alt="Admin Guesthouse List Page" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#nightlyDemo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#nightlyDemo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="skillsUsed">
+            <i class="fa-brands fa-git fa-2xl" style="color: #5fdeb3;"></i>
+            <i class="fa-brands fa-react fa-2xl" style="color: #5fdeb3;"></i>
+        </div>
+        <div class="farmer-reg" id="farmer-reg">
+            <div class="farmer-reg-about">
+                <h1>Farmer Registration System</h1>
+                <p>A Java desktop app for farmer registration and management.
+                    The app allows farmers to sign up, update their profile,
+                    and access their information. Admins can approve or decline requests,
+                    view all registered farmers, edit/delete farmer information,
+                    and generate reports with filters for district and gender.
+                </p>
+                <a href="https://github.com/mehdiacho/FarmersBW" target="_blank">
+                    <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
+                </a>
+            </div>
+            <!-- Carousel -->
+            <div id="farmerDemo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Gohan.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Gohan-snapped.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Cell.png" alt="New York" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="hackfest" id="hackfest">
+            <div class="hackfest-about">
+                <h1>BIUST Hackfest 2022</h1>
+                <p>Worked in a team of 4 to develop a mobile app platform for
+                    the BIUST Resource Mobilization Committee initiative -
+                    "BIUST Open golf tournament" using Android Studio and Java.
+                </p>
+                <a href="https://github.com/mehdiacho/BIUST.Hackfest.2022" target="_blank">
+                    <i class="fa-brands fa-square-github fa-2xl" style="color: #212121;"></i>
+                </a>
+            </div>
+            <!-- Carousel -->
+            <div id="hackfestDemo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Gohan.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Gohan-snapped.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Cell.png" alt="New York" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--<div class="col-1"></div>
+<div class="col-2"></div>
+<div class="col-3"></div>
+<div class="col-4"></div>
+<div class="col-5"></div>
+<div class="col-6"></div>
+<div class="col-7"></div>
+<div class="col-8"></div>
+<div class="col-9"></div>
+<div class="col-10"></div>
+<div class="col-11"></div>
+<div class="col-12"></div>-->
+</body>
 </html>
